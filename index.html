@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays2</title>
+</head>
+<body>
+    <script>
+        // const array = [ [1,'dos',3,'cuatro'], ['uno', 2, 'tres', 4] ];
+        //array[0] === [1,2,3,4]
+        //array[0][1] === 2
+        // const a = array[0];
+        // const b = array[1];
+        // const nuevoArray = [];
+        // nuevoArray.push(b);
+        // nuevoArray.push(a);
+        // console.log(nuevoArray);
+        // const array = [ [1,'dos',3,'cuatro'], ['uno', 2, 'tres', 4] ];
+        // const array2 = [
+        //                     [array[0][0],array[1][1],array[0][2],array[1][3]],
+        //                     [array[1][0],array[0][1],array[1][2],array[0][3]]
+        // ];
+         
+        // console.log(array2);   
+
+        const array = [
+            [1,2,3,4],
+            ['uno','dos','tres','cuatro'],
+            ['UNO','DOS','TRES','CUATRO']
+        ];
+        // 1 UNO uno
+        // 2 DOS dos
+        // array[0] = [1,2,3,4]
+        // array[1] = ['uno','dos','tres','cuatro']
+        // array[2] = ['UNO','DOS','TRES','CUATRO']
+        const array2 = [1,2,3,4];
+    
+                    /*
+                        array2[0] // muestra 1
+                        array2[1] // muestra 2
+                        array2[2] // muestra 3 
+                        array2[3] // muestra 4
+                    */
+        const nuevoArray = [
+            [array[0][0],array[1][0],array[2][0]],
+            [array[0][1],array[1][1],array[2][1]],
+            [array[0][2],array[1][2],array[2][2]],
+        ]
+        console.log(nuevoArray);
+
+        
+
+
+    </script>
+</body>
+</html>
