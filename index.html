@@ -25,32 +25,51 @@
          
         // console.log(array2);   
 
-        const array = [
-            [1,2,3,4],
-            ['uno','dos','tres','cuatro'],
-            ['UNO','DOS','TRES','CUATRO']
-        ];
-        // 1 UNO uno
-        // 2 DOS dos
-        // array[0] = [1,2,3,4]
-        // array[1] = ['uno','dos','tres','cuatro']
-        // array[2] = ['UNO','DOS','TRES','CUATRO']
-        const array2 = [1,2,3,4];
+        // const array = [
+        //     [1,2,3,4],
+        //     ['uno','dos','tres','cuatro'],
+        //     ['UNO','DOS','TRES','CUATRO']
+        // ];
+        // // 1 UNO uno
+        // // 2 DOS dos
+        // // array[0] = [1,2,3,4]
+        // // array[1] = ['uno','dos','tres','cuatro']
+        // // array[2] = ['UNO','DOS','TRES','CUATRO']
+        // const array2 = [1,2,3,4];
     
-                    /*
-                        array2[0] // muestra 1
-                        array2[1] // muestra 2
-                        array2[2] // muestra 3 
-                        array2[3] // muestra 4
-                    */
-        const nuevoArray = [
-            [array[0][0],array[1][0],array[2][0]],
-            [array[0][1],array[1][1],array[2][1]],
-            [array[0][2],array[1][2],array[2][2]],
-        ]
-        console.log(nuevoArray);
+        //             /*
+        //                 array2[0] // muestra 1
+        //                 array2[1] // muestra 2
+        //                 array2[2] // muestra 3 
+        //                 array2[3] // muestra 4
+        //             */
+        // const nuevoArray = [
+        //     [array[0][0],array[1][0],array[2][0]],
+        //     [array[0][1],array[1][1],array[2][1]],
+        //     [array[0][2],array[1][2],array[2][2]],
+        // ]
+        // console.log(nuevoArray);
 
-        
+        const str = 'Este es un texto de prueba';
+        // str.length longitud
+        // str[0]
+        // str[0].toLowerCase() // imprimir el string en minuscula
+        // str[1].toUpperCase() // imprime el string en mayuscula
+
+        // invertirLetras('Este es un texto'); // imprima eSTE ES UN TEXTO
+        function invertirLetras(string){
+            let result = '';
+            for (let i = 0; i < string.length; i++) {
+                if(string[i] == string[i].toLowerCase()){
+                    result += string[i].toUpperCase(); 
+                }else{
+                    result +=  string[i].toLowerCase(); 
+                }
+            }
+            return result;
+        }
+
+        console.log(invertirLetras('Este es un texto'));
 
 
     </script>
